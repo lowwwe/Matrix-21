@@ -26,6 +26,9 @@ public:
 	Vector3 operator *(const Vector3 t_vector)const;
 	Matrix3 operator *(const double t_scale)const;
 
+	bool operator ==(const Matrix3 other)const;
+	bool operator !=(const Matrix3 other)const;
+
 	Matrix3 transpose()const;
 	double determinant() const;
 	Matrix3 inverse() const;

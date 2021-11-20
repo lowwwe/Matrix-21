@@ -33,6 +33,16 @@ Matrix3 Matrix3::operator*(const double t_scale) const
 	return Matrix3();
 }
 
+bool Matrix3::operator==(const Matrix3 other) const
+{
+	return false;
+}
+
+bool Matrix3::operator!=(const Matrix3 other) const
+{
+	return false;
+}
+
 Matrix3 Matrix3::transpose() const
 {
 	return Matrix3();
