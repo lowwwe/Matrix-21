@@ -23,7 +23,7 @@ public:
 	Matrix3 operator +(const Matrix3 t_other) const;
 	Matrix3 operator -(const Matrix3 t_other) const;
 	Matrix3 operator *(const Matrix3 t_other) const;
-	Matrix3 operator *(const Vector3 t_vector)const;
+	Vector3 operator *(const Vector3 t_vector)const;
 	Matrix3 operator *(const double t_scale)const;
 
 	Matrix3 transpose()const;
@@ -31,11 +31,10 @@ public:
 	Matrix3 inverse() const;
 
 
-	static Matrix3 rotationZ(const double t_angleRadians);
-	static Matrix3 rotationY(const double t_angleRadians);
-	static Matrix3 rotationX(const double t_angleRadians);
+	static Matrix3 rotationAntiClockwiseZ(const double t_angleRadians);
+	static Matrix3 rotationAntiClockwiseY(const double t_angleRadians);
+	static Matrix3 rotationAntiClockwiseX(const double t_angleRadians);
 
-	static Matrix3 translation(const Vector3 t_displacement); // 2d translation make sure z=1
+	static Matrix3 translationXY(const Vector3 t_displacement); // 2d translation make sure z=1
 	static Matrix3 scale(const double t_scalingfactor);
 };
-

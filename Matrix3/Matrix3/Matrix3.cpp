@@ -23,9 +23,9 @@ Matrix3 Matrix3::operator*(const Matrix3 t_other) const
 	return Matrix3();
 }
 
-Matrix3 Matrix3::operator*(const Vector3 t_vector) const
+Vector3 Matrix3::operator*(const Vector3 t_vector) const
 {
-	return Matrix3();
+	return Vector3();
 }
 
 Matrix3 Matrix3::operator*(const double t_scale) const
@@ -48,22 +48,22 @@ Matrix3 Matrix3::inverse() const
 	return Matrix3();
 }
 
-Matrix3 Matrix3::rotationZ(const double t_angleRadians)
+Matrix3 Matrix3::rotationAntiClockwiseZ(const double t_angleRadians)
 {
 	return Matrix3();
 }
 
-Matrix3 Matrix3::rotationY(const double t_angleRadians)
+Matrix3 Matrix3::rotationAntiClockwiseY(const double t_angleRadians)
 {
 	return Matrix3();
 }
 
-Matrix3 Matrix3::rotationX(const double t_angleRadians)
+Matrix3 Matrix3::rotationAntiClockwiseX(const double t_angleRadians)
 {
 	return Matrix3();
 }
 
-Matrix3 Matrix3::translation(const Vector3 t_displacement)
+Matrix3 Matrix3::translationXY(const Vector3 t_displacement)
 {
 	return Matrix3();
 }
